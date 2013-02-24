@@ -1,0 +1,112 @@
+index,fecha,cod_capitulo,capitulo,cod_articulo,articulo,cod_concepto,concepto,cod_subconcepto,subconcepto,para,cantidad
+1,2013,3,"Tasas, precios públicos y otros ingresos",30,Tasas,303,Tasas Académicas,30300,Por servicios administrativos,Universidad de Granada,1900000
+2,2013,3,"Tasas, precios públicos y otros ingresos",31,Precios públicos,312,Servicios académicos enseñanzas regladas,31200,Enseñanzas de Grado,Universidad de Granada,29000000
+3,2013,3,"Tasas, precios públicos y otros ingresos",31,Precios públicos,312,Servicios académicos enseñanzas regladas,31201,Enseñanzas de Posgrado oficial,Universidad de Granada,2900000
+4,2013,3,"Tasas, precios públicos y otros ingresos",31,Precios públicos,312,Servicios académicos enseñanzas regladas,31202,Compensación becarios,Universidad de Granada,10500000
+5,2013,3,"Tasas, precios públicos y otros ingresos",31,Precios públicos,312,Servicios académicos enseñanzas regladas,31203,Compensación familias numerosas,Universidad de Granada,1500000
+6,2013,3,"Tasas, precios públicos y otros ingresos",31,Precios públicos,312,Servicios académicos enseñanzas regladas,31204,Compens.matrícula personal propio,Universidad de Granada,840000
+7,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32000,Estudios de Extensión Universitaria,Universidad de Granada,75000
+8,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32002,Centro de Actividades Deportivas,Universidad de Granada,300000
+9,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32003,Cursos propios de Postgrado,Universidad de Granada,1500000
+10,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32008,"Inscripciones jornadas,congresos",Universidad de Granada,300000
+11,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32010,Centro Mediterráneo,Universidad de Granada,150000
+12,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32011,Aula Permanente Formación Abierta,Universidad de Granada,50000
+13,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,320,Derechos matrícula cursos y seminarios,32099,Otros Cursos y Seminarios,Universidad de Granada,250000
+14,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,323,Contratos artículo 83 LOU,32300,Contratos OTRI,Universidad de Granada,2500000
+15,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,323,Contratos artículo 83 LOU,32302,Contratos Fundación Univ.Empresa,Universidad de Granada,375000
+16,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,324,Unidades de apoyo a la investigación,32400,Centro Instrumentación Científica,Universidad de Granada,250000
+17,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,325,"Alojamiento, restauración y residencias",32500,Colegio Mayor Isabel la Católica,Universidad de Granada,700000
+18,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,325,"Alojamiento, restauración y residencias",32501,Comedores universitarios,Universidad de Granada,2100000
+19,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,325,"Alojamiento, restauración y residencias",32503,Residencia Corrala de Santiago,Universidad de Granada,100000
+20,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,325,"Alojamiento, restauración y residencias",32504,Residencia Carmen de la Victoria,Universidad de Granada,100000
+21,2013,3,"Tasas, precios públicos y otros ingresos",32,Ingresos por prestación de servicios,329,Otros ingresos por prestación de servicios,32999,Otros por prestación de servicios,Universidad de Granada,100000
+22,2013,3,"Tasas, precios públicos y otros ingresos",33,Venta de bienes,330,Publicaciones propias,33000,Libros y revistas Editorial Universit.,Universidad de Granada,250000
+23,2013,3,"Tasas, precios públicos y otros ingresos",39,Otros Ingresos,399,Ingresos diversos,39900,Reintegro anuncios adjudicatarios,Universidad de Granada,25000
+24,2013,3,"Tasas, precios públicos y otros ingresos",39,Otros Ingresos,399,Ingresos diversos,39999,Otros Ingresos,Universidad de Granada,50000
+25,2013,4,Transferencias corrientes,40,De la Administración General del Estado,400,Del Ministerio de Educación,39999,Otros Ingresos,Universidad de Granada,10500000
+26,2013,4,Transferencias corrientes,40,De la Administración General del Estado,400,Del Ministerio de Educación,40000,Financiación coste Ceuta y Melilla,Universidad de Granada,8500000
+27,2013,4,Transferencias corrientes,40,De la Administración General del Estado,400,Del Ministerio de Educación,40003,Programas Europeos de movilidad,Universidad de Granada,2000000
+28,2013,4,Transferencias corrientes,40,De la Administración General del Estado,401,De otros Ministerios,40003,Programas Europeos de movilidad,Universidad de Granada,100000
+29,2013,4,Transferencias corrientes,40,De la Administración General del Estado,401,De otros Ministerios,40100,Financiación operaciones corrientes,Universidad de Granada,100000
+30,2013,4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,410.0,De Organismos autónomos estatales,40100,Financiación operaciones corrientes,Universidad de Granada,20000
+31,2013,4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,410.0,De Organismos autónomos estatales,41009,Del IMSERSO,Universidad de Granada,20000
+32,2013,4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,411.0,De Organismos autónomos Junta Andalucía,41009,Del IMSERSO,Universidad de Granada,50000
+33,2013,4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,411.0,De Organismos autónomos Junta Andalucía,41113,Instituto Andaluz de la Juventud,Universidad de Granada,50000
+34,2013,4,Transferencias corrientes,42,De la Seguridad Social,421.0,Del Servicio Andaluz de Salud,41113,Instituto Andaluz de la Juventud,Universidad de Granada,3000000
+35,2013,4,Transferencias corrientes,42,De la Seguridad Social,421.0,Del Servicio Andaluz de Salud,42100,Plazas vinculadas. C.Específico,Universidad de Granada,3000000
+36,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,42100,Plazas vinculadas. C.Específico,Universidad de Granada,259083607
+37,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45000,Financiación operativa estructural,Universidad de Granada,204719518
+38,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45001,Financ. Operativa vincul. resultados,Universidad de Granada,46866897
+39,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45002,Al Consejo Social,Universidad de Granada,107193
+40,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45004,Planes de apoyo PRAEM,Universidad de Granada,425000
+41,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45005,Planes de apoyo Estudiantes y EEES,Universidad de Granada,5050000
+42,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45007,Otros Planes de apoyo,Universidad de Granada,1915000
+43,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45007,Otros Planes de apoyo,Universidad de Granada,395000
+44,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45100,De Presidencia,Universidad de Granada,50000
+45,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45101,De Gobernación,Universidad de Granada,30000
+46,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45103,De Justicia y Administraciones Públic,Universidad de Granada,30000
+47,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45105,De Empleo,Universidad de Granada,75000
+48,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45106,"De Turismo, Comercio y Deporte",Universidad de Granada,60000
+49,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45110,De Igualdad y Bienestar Social,Universidad de Granada,75000
+50,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45111,De Cultura,Universidad de Granada,75000
+51,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,459,De otras Comunidades Autónomas,45111,De Cultura,Universidad de Granada,20000
+52,2013,4,Transferencias corrientes,45,De Comunidades Autónomas,459,De otras Comunidades Autónomas,45902,De la Ciudad Autónoma de Ceuta,Universidad de Granada,20000
+53,2013,4,Transferencias corrientes,46,De Corporaciones Locales,460.0,De Diputaciones y Cabildos Insulares,45902,De la Ciudad Autónoma de Ceuta,Universidad de Granada,30000
+54,2013,4,Transferencias corrientes,46,De Corporaciones Locales,460.0,De Diputaciones y Cabildos Insulares,46000,De la Diputación de Granada,Universidad de Granada,30000
+55,2013,4,Transferencias corrientes,46,De Corporaciones Locales,461,De Ayuntamientos,46000,De la Diputación de Granada,Universidad de Granada,60000
+56,2013,4,Transferencias corrientes,46,De Corporaciones Locales,461,De Ayuntamientos,46100,Del Ayuntamiento de Granada,Universidad de Granada,30000
+57,2013,4,Transferencias corrientes,46,De Corporaciones Locales,461,De Ayuntamientos,46199,De otros Ayuntamientos,Universidad de Granada,30000
+58,2013,4,Transferencias corrientes,47,De empresas privadas,470,De entidades financieras,46199,De otros Ayuntamientos,Universidad de Granada,950000
+59,2013,4,Transferencias corrientes,47,De empresas privadas,470,De entidades financieras,47001,De Caja Granada según Convenio,Universidad de Granada,450000
+60,2013,4,Transferencias corrientes,47,De empresas privadas,470,De entidades financieras,47002,Del BSCH según Convenio,Universidad de Granada,500000
+61,2013,4,Transferencias corrientes,47,De empresas privadas,479.0,De otras empresas,47002,Del BSCH según Convenio,Universidad de Granada,325000
+62,2013,4,Transferencias corrientes,47,De empresas privadas,479.0,De otras empresas,47900,Para prácticas educativas,Universidad de Granada,250000
+63,2013,4,Transferencias corrientes,47,De empresas privadas,479.0,De otras empresas,47901,Para actividades académicas,Universidad de Granada,75000
+64,2013,4,Transferencias corrientes,49,Del exterior,495,Otras transferencias de la Unión Europea,47901,Para actividades académicas,Universidad de Granada,4000000
+65,2013,4,Transferencias corrientes,49,Del exterior,495,Otras transferencias de la Unión Europea,49500,Para programas europeos,Universidad de Granada,4000000
+66,2013,5,Ingresos Patrimoniales,52,Intereses de depósitos,520.0,Intereses de cuentas bancarias,52000,De Caja Granada,Universidad de Granada,200000
+67,2013,5,Ingresos Patrimoniales,52,Intereses de depósitos,520.0,Intereses de cuentas bancarias,52001,De otras cuentas y depósitos,Universidad de Granada,300000
+68,2013,5,Ingresos Patrimoniales,53.0,Rentas de bienes inmuebles,541.0,Alquiler y productos de inmuebles,54101,Instalaciones deportivas,Universidad de Granada,500000
+69,2013,5,Ingresos Patrimoniales,53.0,Rentas de bienes inmuebles,541.0,Alquiler y productos de inmuebles,54102,Aulas y otros recintos universitarios,Universidad de Granada,100000
+70,2013,5,Ingresos Patrimoniales,55,Producto de concesiones y aprov.especiales,551.0,De concesiones administrativas,551XX,De concesiones administrativas,Universidad de Granada,400000
+71,2013,5,Ingresos Patrimoniales,59,Otros ingresos patrimoniales,591.0,Explotación de patentes,59100,Licencias y explotación de patentes,Universidad de Granada,6000
+72,2013,7,Transferencias de capital,70,De la Administración General del Estado,700,Del Ministerio Educación,70000,Para investigación científica,Universidad de Granada,17000000
+73,2013,7,Transferencias de capital,70,De la Administración General del Estado,700,Del Ministerio Educación,70007,Cofinanciación Progr.Operativ.FEDER,Universidad de Granada,4900000
+74,2013,7,Transferencias de capital,70,De la Administración General del Estado,701.0,De otros Ministerios,70100,Para investigación científica,Universidad de Granada,95000
+75,2013,7,Transferencias de capital,70,De la Administración General del Estado,702,Del Ministerio de Ciencia e Innovación,70200,INNPLANTA Conv. 2012,Universidad de Granada,250000
+76,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,710.0,De Organismos autónomos estatales,71000,Del Instituto de Salud Carlos III,Universidad de Granada,150000
+77,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,710.0,De Organismos autónomos estatales,71001,Del Instituto de la Mujer,Universidad de Granada,35000
+78,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,710.0,De Organismos autónomos estatales,71002,Del Instituto Nacional Invest.Agrarias,Universidad de Granada,40000
+79,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,710.0,De Organismos autónomos estatales,71003,Del Consejo Superior de Deportes,Universidad de Granada,18000
+80,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,710.0,De Organismos autónomos estatales,71004,De la A.E.C.I.,Universidad de Granada,200000
+81,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,710.0,De Organismos autónomos estatales,71005,Del C.S.I.C.,Universidad de Granada,150000
+82,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,711.0,De Organismos autónomos Junta Andalucía,71101,Instituto Andaluz de la Mujer,Universidad de Granada,50000
+83,2013,7,Transferencias de capital,71,De Organismos Autónomos Administrativos,711.0,De Organismos autónomos Junta Andalucía,71102,Instituto Estadística de Andalucía,Universidad de Granada,50000
+84,2013,7,Transferencias de capital,74,De empresas públicas y otros entes públicos,740.0,De Otros Organismos,74001,De otros organismos,Universidad de Granada,50000
+85,2013,7,Transferencias de capital,74,De empresas públicas y otros entes públicos,740.0,De Otros Organismos,74099,De Otros Entes Públicos,Universidad de Granada,150000
+86,2013,7,Transferencias de capital,74,De empresas públicas y otros entes públicos,741.0,De Universidades,74100,De Universidades Andaluzas,Universidad de Granada,50000
+87,2013,7,Transferencias de capital,74,De empresas públicas y otros entes públicos,741.0,De Universidades,74199,De Otras Universidades,Universidad de Granada,150000
+88,2013,7,Transferencias de capital,75,De Comunidades Autónomas,750,Consej.Economía Innovación y  Ciencia J.A.,75000,Para investigación científica,Universidad de Granada,8000000
+89,2013,7,Transferencias de capital,75,De Comunidades Autónomas,750,Consej.Economía Innovación y  Ciencia J.A.,75001,Plan Plurianual de Inversiones,Universidad de Granada,20000000
+90,2013,7,Transferencias de capital,75,De Comunidades Autónomas,750,Consej.Economía Innovación y  Ciencia J.A.,75002,Cofinanciación Progr.Operativ.FEDER,Universidad de Granada,2100000
+91,2013,7,Transferencias de capital,75,De Comunidades Autónomas,750,Consej.Economía Innovación y  Ciencia J.A.,75003,Proyecto Universidad Digital,Universidad de Granada,0
+92,2013,7,Transferencias de capital,75,De Comunidades Autónomas,750,Consej.Economía Innovación y  Ciencia J.A.,75007,Financ Operat Investig,Universidad de Granada,0
+93,2013,7,Transferencias de capital,75,De Comunidades Autónomas,750,Consej.Economía Innovación y  Ciencia J.A.,75008,CEI Fortalecimiento,Universidad de Granada,0
+94,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75100,De Presidencia,Universidad de Granada,25000
+95,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75101,De Gobernación,Universidad de Granada,25000
+96,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75102,De Educación,Universidad de Granada,25000
+97,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75103,De Justicia y Administraciones Públic,Universidad de Granada,25000
+98,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75105,De Empleo,Universidad de Granada,200000
+99,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75110,De Igualdad y Bienestar Social,Universidad de Granada,20000
+100,2013,7,Transferencias de capital,75,De Comunidades Autónomas,751,De otras Consejerías,75111,De Cultura,Universidad de Granada,20000
+101,2013,7,Transferencias de capital,75,De Comunidades Autónomas,759,De otras Comunidades Autónomas,75909,De resto de Comunidades Autónomas,Universidad de Granada,25000
+102,2013,7,Transferencias de capital,76,De Corporaciones Locales,760.0,De Diputaciones y Cabildos Insulares,76000,De la Diputación de Granada,Universidad de Granada,10000
+103,2013,7,Transferencias de capital,76,De Corporaciones Locales,760.0,De Diputaciones y Cabildos Insulares,76099,De otras Diputaciones Provinciales,Universidad de Granada,10000
+104,2013,7,Transferencias de capital,76,De Corporaciones Locales,761,De Ayuntamientos,76100,Del Ayuntamiento de Granada,Universidad de Granada,10000
+105,2013,7,Transferencias de capital,77,De empresas privadas,770,De entidades financieras,77001,De Caja Granada,Universidad de Granada,450000
+106,2013,7,Transferencias de capital,77,De empresas privadas,770,De entidades financieras,77002,Del BSCH,Universidad de Granada,500000
+107,2013,7,Transferencias de capital,77,De empresas privadas,770,De entidades financieras,77003,De Caja Rural,Universidad de Granada,250000
+108,2013,7,Transferencias de capital,77,De empresas privadas,779.0,De otras empresas,779XX,De otras empresas,Universidad de Granada,200000
+109,2013,7,Transferencias de capital,78,De familias e instituciones sin fines de lucro,781,De instituciones y fundaciones,78100,Para investigación científica,Universidad de Granada,200000
+110,2013,7,Transferencias de capital,79,Del exterior,795,Otras transferencias de la Unión Europea,79500,Para investigación científica,Universidad de Granada,3500000
+111,2013,8,Activos financieros,82.0,Reintegro de préstamos concedidos,821.0,A largo plazo,82100,Del personal de la Universidad,Universidad de Granada,650000
