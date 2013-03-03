@@ -26,9 +26,9 @@ cod_capitulo,capitulo,cod_articulo,articulo,cod_concepto,concepto,cod_subconcept
 4,Transferencias corrientes,40,De la Administración General del Estado,400,Del Ministerio de Educación,40000,Financiación coste Ceuta y Melilla,8500000
 4,Transferencias corrientes,40,De la Administración General del Estado,400,Del Ministerio de Educación,40003,Programas Europeos de movilidad,2000000
 4,Transferencias corrientes,40,De la Administración General del Estado,401,De otros Ministerios,40100,Financiación operaciones corrientes,100000
-4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,410.0,De Organismos autónomos estatales,41009,Del IMSERSO,20000
-4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,411.0,De Organismos autónomos Junta Andalucía,41113,Instituto Andaluz de la Juventud,50000
-4,Transferencias corrientes,42,De la Seguridad Social,421.0,Del Servicio Andaluz de Salud,42100,Plazas vinculadas. C.Específico,3000000
+4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,410,De Organismos autónomos estatales,41009,Del IMSERSO,20000
+4,Transferencias corrientes,41,De Organismos Autónomos Administrativos,411,De Organismos autónomos Junta Andalucía,41113,Instituto Andaluz de la Juventud,50000
+4,Transferencias corrientes,42,De la Seguridad Social,421,Del Servicio Andaluz de Salud,42100,Plazas vinculadas. C.Específico,3000000
 4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45000,Financiación operativa estructural,2.04719518E8
 4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45001,Financ. Operativa vincul. resultados,4.6866897E7
 4,Transferencias corrientes,45,De Comunidades Autónomas,450,Consej.Innovación Ciencia y Empresa. J.And,45002,Al Consejo Social,107193
@@ -43,13 +43,13 @@ cod_capitulo,capitulo,cod_articulo,articulo,cod_concepto,concepto,cod_subconcept
 4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45110,De Igualdad y Bienestar Social,75000
 4,Transferencias corrientes,45,De Comunidades Autónomas,451,De otras Consejerías,45111,De Cultura,75000
 4,Transferencias corrientes,45,De Comunidades Autónomas,459,De otras Comunidades Autónomas,45902,De la Ciudad Autónoma de Ceuta,20000
-4,Transferencias corrientes,46,De Corporaciones Locales,460.0,De Diputaciones y Cabildos Insulares,46000,De la Diputación de Granada,30000
+4,Transferencias corrientes,46,De Corporaciones Locales,460,De Diputaciones y Cabildos Insulares,46000,De la Diputación de Granada,30000
 4,Transferencias corrientes,46,De Corporaciones Locales,461,De Ayuntamientos,46100,Del Ayuntamiento de Granada,30000
 4,Transferencias corrientes,46,De Corporaciones Locales,461,De Ayuntamientos,46199,De otros Ayuntamientos,30000
 4,Transferencias corrientes,47,De empresas privadas,470,De entidades financieras,47001,De Caja Granada según Convenio,450000
 4,Transferencias corrientes,47,De empresas privadas,470,De entidades financieras,47002,Del BSCH según Convenio,500000
-4,Transferencias corrientes,47,De empresas privadas,479.0,De otras empresas,47900,Para prácticas educativas,250000
-4,Transferencias corrientes,47,De empresas privadas,479.0,De otras empresas,47901,Para actividades académicas,75000
+4,Transferencias corrientes,47,De empresas privadas,479,De otras empresas,47900,Para prácticas educativas,250000
+4,Transferencias corrientes,47,De empresas privadas,479,De otras empresas,47901,Para actividades académicas,75000
 4,Transferencias corrientes,49,Del exterior,495,Otras transferencias de la Unión Europea,49500,Para programas europeos,4000000
 5,Ingresos Patrimoniales,52,Intereses de depósitos,520.0,Intereses de cuentas bancarias,52000,De Caja Granada,200000
 5,Ingresos Patrimoniales,52,Intereses de depósitos,520.0,Intereses de cuentas bancarias,52001,De otras cuentas y depósitos,300000
