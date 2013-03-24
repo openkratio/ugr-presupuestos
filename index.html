@@ -1,67 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Presupuestos 2013 Universidad de Granada by openkratio</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <!-- D3.js and Sankey -->
+    <script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>
+    <script src="javascripts/sankey.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>    <![endif]-->
+
+    <!-- Sharebar -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+
+    <!-- Sankey -->
+    <style>
+      @import url(style.css);
+
+      #chart {
+        height: 600px;
+      }
+      
+      .node rect {
+        cursor: move;
+        fill-opacity: .9;
+        shape-rendering: crispEdges;
+      }
+      
+      .node text {
+        pointer-events: none;
+        text-shadow: 0 1px 0 #fff;
+      }
+      
+      .link {
+        fill: none;
+        stroke: #000;
+        stroke-opacity: .2;
+      }
+      
+      .link:hover {
+        stroke-opacity: .5;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Presupuestos 2013 Universidad de Granada</h1>
-        <p class="header">Flujo de Ingresos a Gastos previstos</p>
-
+        <h1 class="header">Presupuestos Universidad de Granada</h1>
+        <p class="header">Comprendiendo la financiación 2013 de la Universidad.<br>
+          <br>
+          <a class="header name" href="#sankey">Flujo del Presupuesto</a> <a class="header name"
+            href="#income">Detalle de ingresos</a> <a class="header name" href="#spending">Detalle
+            de gastos</a> </p>
+        <p>Descarga los datos:</p>
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/openkratio/ugr-presupuestos/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/openkratio/ugr-presupuestos/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/openkratio/ugr-presupuestos">View On GitHub</a></li>
+          <li class="download"><a class="buttons" href="https://raw.github.com/oslugr/presupuestos/master/ugr-estado-ingresos-2013.csv">Ingresos
+              (csv)<br>
+            </a></li>
+          <li class="download"><a class="buttons" href="https://raw.github.com/oslugr/presupuestos/master/ugr-estado-gastos-2013.csv">Gastos
+              (csv)<br>
+            </a></li>
+          <li><a class="buttons github" href="https://github.com/openkratio/ugr-presupuestos">Ver
+              en GitHub</a></li>
         </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/openkratio">openkratio</a></p>
-
-
+        <p class="header">Un proyecto <a class="header name" href="https://openkratio.org">OpenKratio</a>
+          para la <a class="header name" href="http://ugr.es">UGR</a></p>
       </header>
       <section>
-        <h3>Welcome to GitHub Pages.</h3>
+        <table id="sankey" style="width: 699px; height: 51px;" border="0">
+          <tbody>
+            <tr align="center">
+              <td style="width: 200px; font-size: 24px;">Ingresos (Artículo)</td>
+              <td style="width: 200px; font-size: 24px;">Programa de Gasto</td>
+              <td style="width: 200px; font-size: 24px;">Capítulo (Gasto)</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Visualizations -->
+        <!-- Sankey Diagram -->
+        <p id="chart"></p>
+        <!-- Income Details Table -->
+        <p id="income">Detalle de los Ingresos 2013</p>
+        <iframe src="http://datahub.io/dataset/e8d059e4-6981-4e11-870b-22d830adb6b5/resource/40628baa-5b2c-4428-b6b9-7ae20faa45f8/embed?query=%7B%22size%22%3A100%2C%22from%22%3A0%2C%22q%22%3A%22%22%2C%22facets%22%3A%7B%7D%2C%22filters%22%3A%5B%5D%7D&amp;view-graph=%7B%22group%22%3Anull%2C%22series%22%3A%5B%5D%2C%22graphType%22%3A%22lines-and-points%22%7D&amp;backend=ckan&amp;url=http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-ingresos-2013.csv&amp;dataset=%7B%22resource_group_id%22%3A%221d0c39f9-12f0-46a0-82e2-0557c8d8e191%22%2C%22cache_last_updated%22%3Anull%2C%22revision_timestamp%22%3A%222013-03-03T22%3A47%3A17.241882%22%2C%22webstore_last_updated%22%3A%222013-03-03T16%3A47%3A16.580215%22%2C%22datastore_active%22%3Atrue%2C%22id%22%3A%2240628baa-5b2c-4428-b6b9-7ae20faa45f8%22%2C%22size%22%3A%2214697%22%2C%22state%22%3A%22active%22%2C%22last_modified%22%3A%222013-03-03T16%3A47%3A14.473471%22%2C%22hash%22%3A%221404d36fab3aafa1171ecf64d767298ece8dc427%22%2C%22description%22%3A%222013%20income%20budget%20for%20University%20of%20Granada%5Cr%5CnOriginal%20data%20source%3A%20http%3A//opendata.ugr.es%22%2C%22format%22%3A%22csv%22%2C%22tracking_summary%22%3A%7B%22total%22%3A0%2C%22recent%22%3A0%7D%2C%22mimetype_inner%22%3A%22%22%2C%22mimetype%22%3A%22text/plain%22%2C%22cache_url%22%3Anull%2C%22name%22%3A%222013-income-budget-ugr.csv%22%2C%22created%22%3A%222013-03-03T16%3A47%3A11.608732%22%2C%22url%22%3A%22http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-ingresos-2013.csv%22%2C%22webstore_url%22%3A%22active%22%2C%22position%22%3A1%2C%22revision_id%22%3A%220b203542-8e43-4211-85af-c6ead7032232%22%2C%22resource_type%22%3A%22file%22%2C%22formatNormalized%22%3A%22csv%22%2C%22backend%22%3A%22ckan%22%7D&amp;currentView=null&amp;readOnly=false&amp;view-grid=%7B%22hiddenColumns%22%3A%5B%22_id%22%2C%22fecha%22%2C%22cod_capitulo%22%2C%22cod_articulo%22%2C%22index%22%2C%22cod_concepto%22%2C%22cod_subconcepto%22%5D%2C%22columnsOrder%22%3A%5B%22capitulo%22%2C%22articulo%22%2C%22concepto%22%2C%22subconcepto%22%2C%22cantidad%22%5D%2C%22columnsSort%22%3A%7B%7D%2C%22columnsWidth%22%3A%5B%5D%2C%22fitColumns%22%3Atrue%7D&amp;view-map=%7B%22geomField%22%3Anull%2C%22lonField%22%3Anull%2C%22latField%22%3Anull%2C%22autoZoom%22%3Atrue%7D&amp;state_version=1&amp;width=800&amp;height=500"
+          frameborder="0" height="500" width="800"></iframe>
+        <!-- Spending Details Table -->
+        <p id="spending">Detalle de los Gastos 2013</p>
+        <iframe src="http://datahub.io/dataset/e8d059e4-6981-4e11-870b-22d830adb6b5/resource/279820d3-459c-4eff-8011-e1fb68cef1f8/embed?query=%7B%22size%22%3A100%2C%22from%22%3A0%2C%22q%22%3A%22%22%2C%22facets%22%3A%7B%7D%2C%22filters%22%3A%5B%5D%7D&amp;view-graph=%7B%22group%22%3Anull%2C%22series%22%3A%5B%5D%2C%22graphType%22%3A%22lines-and-points%22%7D&amp;backend=ckan&amp;url=http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-gastos-2013.csv&amp;dataset=%7B%22resource_group_id%22%3A%221d0c39f9-12f0-46a0-82e2-0557c8d8e191%22%2C%22cache_last_updated%22%3Anull%2C%22revision_timestamp%22%3A%222013-03-03T22%3A10%3A46.565932%22%2C%22webstore_last_updated%22%3A%222013-02-24T16%3A03%3A24.127738%22%2C%22datastore_active%22%3Atrue%2C%22id%22%3A%22279820d3-459c-4eff-8011-e1fb68cef1f8%22%2C%22size%22%3A%2220062%22%2C%22state%22%3A%22active%22%2C%22last_modified%22%3A%222013-02-24T16%3A03%3A21.406092%22%2C%22hash%22%3A%22cd5947a6de8e015950319f7eb5df7de750c46086%22%2C%22description%22%3A%222013%20spending%20budget%20for%20University%20of%20Granada%5Cr%5CnOriginal%20data%20source%3A%20http%3A//opendata.ugr.es%22%2C%22format%22%3A%22csv%22%2C%22tracking_summary%22%3A%7B%22total%22%3A0%2C%22recent%22%3A0%7D%2C%22mimetype_inner%22%3A%22%22%2C%22mimetype%22%3A%22text/plain%22%2C%22cache_url%22%3A%22%22%2C%22name%22%3A%222013-spending-budget-ugr.csv%22%2C%22created%22%3A%222013-02-24T16%3A03%3A18.465437%22%2C%22url%22%3A%22http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-gastos-2013.csv%22%2C%22webstore_url%22%3A%22active%22%2C%22position%22%3A0%2C%22revision_id%22%3A%22daa650b5-bb01-455c-a66b-f09f4111672c%22%2C%22resource_type%22%3A%22file%22%2C%22formatNormalized%22%3A%22csv%22%2C%22backend%22%3A%22ckan%22%7D&amp;currentView=null&amp;readOnly=false&amp;view-grid=%7B%22hiddenColumns%22%3A%5B%22_id%22%2C%22fecha%22%2C%22de%22%2C%22cod_capitulo%22%2C%22index%22%2C%22cod_concepto%22%2C%22cod_programa%22%5D%2C%22columnsOrder%22%3A%5B%22capitulo%22%2C%22concepto%22%2C%22programa%22%2C%22cantidad%22%5D%2C%22columnsSort%22%3A%7B%7D%2C%22columnsWidth%22%3A%5B%5D%2C%22fitColumns%22%3Atrue%7D&amp;view-map=%7B%22geomField%22%3Anull%2C%22lonField%22%3Anull%2C%22latField%22%3Anull%2C%22autoZoom%22%3Atrue%7D&amp;state_version=1&amp;width=800&amp;height=500"
+          frameborder="0" height="500" width="800"></iframe>
+        <script>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            var margin = {top: 1, right: 1, bottom: 6, left: 1},
+                width = 700 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+            
+            var formatNumber = d3.format(",.0f"),
+                format = function(d) { return formatNumber(d) + " Euros"; },
+                color = d3.scale.category20();
+            
+            var svg = d3.select("#chart").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            
+            var sankey = d3.sankey()
+                .nodeWidth(15)
+                .nodePadding(10)
+                .size([width, height]);
+            
+            var path = sankey.link();
+            
+            d3.json("./src/ugr-sankey.json", function(energy) {
+            
+              sankey
+                  .nodes(energy.nodes)
+                  .links(energy.links)
+                  .layout(32);
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+            
+              var link = svg.append("g").selectAll(".link")
+                  .data(energy.links)
+                .enter().append("path")
+                  .attr("class", "link")
+                  .attr("d", path)
+                  .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+                  .sort(function(a, b) { return b.dy - a.dy; });
+            
+              link.append("title")
+                  .text(function(d) { return d.source.name + " -> " + d.target.name + "\n" + format(d.value); });
+            
+              var node = svg.append("g").selectAll(".node")
+                  .data(energy.nodes)
+                .enter().append("g")
+                  .attr("class", "node")
+                  .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+                .call(d3.behavior.drag()
+                  .origin(function(d) { return d; })
+                  .on("dragstart", function() { this.parentNode.appendChild(this); })
+                  .on("drag", dragmove));
+            
+              node.append("rect")
+                  .attr("height", function(d) { return d.dy; })
+                  .attr("width", sankey.nodeWidth())
+                  .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
+                  .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
+                .append("title")
+                  .text(function(d) { return d.name + "\n" + format(d.value); });
+            
+              node.append("text")
+                  .attr("x", -6)
+                  .attr("y", function(d) { return d.dy / 2; })
+                  .attr("dy", ".35em")
+                  .attr("text-anchor", "end")
+                  .attr("transform", null)
+                  .text(function(d) { return d.name; })
+                .filter(function(d) { return d.x < width / 2; })
+                  .attr("x", 6 + sankey.nodeWidth())
+                  .attr("text-anchor", "start");
+            
+              function dragmove(d) {
+                d3.select(this).attr("transform", "translate(" + d.x + "," + (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) + ")");
+                sankey.relayout();
+                link.attr("d", path);
+              }
+            });
+        </script> </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+    <p></p>
+
+    <!-- Sharebar -->
+    <script type="text/javascript">stLight.options({publisher: "ec8bf6c6-1f0a-4ecb-87bc-b9e34ed0b6b6", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <script>
+    var options={ "publisher": "ec8bf6c6-1f0a-4ecb-87bc-b9e34ed0b6b6", "position": "right", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "email", "sharethis"]}};
+    var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+    </script>
+
   </body>
 </html>

@@ -1,4 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  </head>
+  <body>
+    <pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;pre&gt;@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 
 /* MeyerWeb Reset */
 
@@ -176,7 +186,7 @@ table {
 }
 
 table {
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
  }
@@ -186,13 +196,10 @@ th {
 	font-size: 18px;
 	font-weight: normal;
   padding: 10px;
-  background: #232323;
-  color: #FDFEFB;
  }
 
 td {
   padding: 10px;
-	background: #ccc;
  }
 
 
@@ -228,7 +235,7 @@ p.header {
 
 h1.header {
 	font-family: Arvo, sans-serif;
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: 300;
 	line-height: 1.3em;
 	border-bottom: none;
@@ -319,7 +326,6 @@ section {
 
 footer {
   width:170px;
-  float:left;
   position:fixed;
   bottom:10px;
 	padding-left: 50px;
@@ -410,4 +416,9 @@ footer {
     font-size:12pt;
     color:#444;
   }
-}
+}&lt;/pre&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  </body>
+</html>
