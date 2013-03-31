@@ -17,6 +17,20 @@
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39465874-2']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>    
     <!-- Sankey -->
     <style>
       @import url(style.css);
@@ -53,11 +67,10 @@
         <h1 class="header">Presupuestos Universidad de Granada</h1>
         <p class="header">Comprendiendo la financiación 2013 de la Universidad.<br>
           <br>
-          <a class="header name" href="#sankey">Flujo del Presupuesto</a> 
-          <a class="header name" href="#income">Detalle de ingresos</a> 
-          <a class="header name" href="#spending">Detalle de gastos</a> 
-          <a class="header name" href="#disqus_thread">D&eacute;janos un comentario</a> 
-        </p>
+          <a class="header name" href="#flujo">Flujo del Presupuesto</a> <a class="header name"
+            href="#income">Detalle de ingresos</a> <a class="header name" href="#spending">Detalle
+            de gastos</a> <a class="header name" href="#disqus_thread">Déjanos
+            un comentario</a> </p>
         <p>Descarga los datos:</p>
         <ul>
           <li class="download"><a class="buttons" href="https://raw.github.com/oslugr/presupuestos/master/ugr-estado-ingresos-2013.csv">Ingresos
@@ -69,16 +82,18 @@
           <li><a class="buttons github" href="https://github.com/openkratio/ugr-presupuestos">Ver
               en GitHub</a></li>
         </ul>
-        <p class="header">Un proyecto <a class="header name" href="https://openkratio.org">OpenKratio</a>
-          para la <a class="header name" href="http://ugr.es">UGR</a></p>
+        <p class="header">Proyecto <a class="header name" href="https://openkratio.org">OpenKratio</a>
+          para <a class="header name" href="http://ugr.es">UGR</a></p>
       </header>
       <section>
+        <h2 id="flujo">Flujo del presupuesto</h2>
+        <p>En el siguiente diagrama figura el reparto de gastos de acuerdo a los ingresos presupuestados. Los ingresos figuran desglosados por clasificación económica en artículos y los gastos en clasificación por programas y capítulos (económica).</p>
         <table id="sankey" style="width: 850px; height: 51px;" border="0">
           <tbody>
             <tr align="center">
-              <td style="width: 200px; font-size: 24px;">Ingresos (Artículo)</td>
-              <td style="width: 200px; font-size: 24px;">Programa de Gasto</td>
-              <td style="width: 200px; font-size: 24px;">Capítulo (Gasto)</td>
+              <td style="width: 200px; font-size: 18px;">Ingresos (Artículo)</td>
+              <td style="width: 200px; font-size: 18px;">Programa de Gasto</td>
+              <td style="width: 200px; font-size: 18px;">Capítulo (Gasto)</td>
             </tr>
           </tbody>
         </table>
@@ -86,17 +101,33 @@
         <!-- Sankey Diagram -->
         <p id="chart"></p>
         <!-- Income Details Table -->
-        <p id="income">Detalle de los Ingresos 2013</p>
+        <h2 id="income">Detalle de los Ingresos 2013</h2>
+        <p>Figura una exploración tipo mapa desglosando los ingresos presupuestados por artículo y subconcepto. Debajo una tabla con el detalle de todo el presupuesto. Existen <a href="http://openspending.org/ugr-income">más visualizaciones del presupuesto de ingresos</a> en el sitio OpenSpending.</p>
         <iframe src="http://openspending.org/ugr-income/embed?widget=treemap&amp;state=%7B%22drilldown%22%3A%22articulo%22%2C%22year%22%3A%222013%22%2C%22cuts%22%3A%7B%7D%2C%22drilldowns%22%3A%5B%22articulo%22%5D%7D&amp;width=800&amp;height=500"
           frameborder="0" height="350" width="800"></iframe> <iframe src="http://datahub.io/dataset/e8d059e4-6981-4e11-870b-22d830adb6b5/resource/40628baa-5b2c-4428-b6b9-7ae20faa45f8/embed?query=%7B%22size%22%3A100%2C%22from%22%3A0%2C%22q%22%3A%22%22%2C%22facets%22%3A%7B%7D%2C%22filters%22%3A%5B%5D%7D&amp;view-graph=%7B%22group%22%3Anull%2C%22series%22%3A%5B%5D%2C%22graphType%22%3A%22lines-and-points%22%7D&amp;backend=ckan&amp;url=http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-ingresos-2013.csv&amp;dataset=%7B%22resource_group_id%22%3A%221d0c39f9-12f0-46a0-82e2-0557c8d8e191%22%2C%22cache_last_updated%22%3Anull%2C%22revision_timestamp%22%3A%222013-03-03T22%3A47%3A17.241882%22%2C%22webstore_last_updated%22%3A%222013-03-03T16%3A47%3A16.580215%22%2C%22datastore_active%22%3Atrue%2C%22id%22%3A%2240628baa-5b2c-4428-b6b9-7ae20faa45f8%22%2C%22size%22%3A%2214697%22%2C%22state%22%3A%22active%22%2C%22last_modified%22%3A%222013-03-03T16%3A47%3A14.473471%22%2C%22hash%22%3A%221404d36fab3aafa1171ecf64d767298ece8dc427%22%2C%22description%22%3A%222013%20income%20budget%20for%20University%20of%20Granada%5Cr%5CnOriginal%20data%20source%3A%20http%3A//opendata.ugr.es%22%2C%22format%22%3A%22csv%22%2C%22tracking_summary%22%3A%7B%22total%22%3A0%2C%22recent%22%3A0%7D%2C%22mimetype_inner%22%3A%22%22%2C%22mimetype%22%3A%22text/plain%22%2C%22cache_url%22%3Anull%2C%22name%22%3A%222013-income-budget-ugr.csv%22%2C%22created%22%3A%222013-03-03T16%3A47%3A11.608732%22%2C%22url%22%3A%22http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-ingresos-2013.csv%22%2C%22webstore_url%22%3A%22active%22%2C%22position%22%3A1%2C%22revision_id%22%3A%220b203542-8e43-4211-85af-c6ead7032232%22%2C%22resource_type%22%3A%22file%22%2C%22formatNormalized%22%3A%22csv%22%2C%22backend%22%3A%22ckan%22%7D&amp;currentView=null&amp;readOnly=false&amp;view-grid=%7B%22hiddenColumns%22%3A%5B%22_id%22%2C%22fecha%22%2C%22cod_capitulo%22%2C%22cod_articulo%22%2C%22index%22%2C%22cod_concepto%22%2C%22cod_subconcepto%22%5D%2C%22columnsOrder%22%3A%5B%22capitulo%22%2C%22articulo%22%2C%22concepto%22%2C%22subconcepto%22%2C%22cantidad%22%5D%2C%22columnsSort%22%3A%7B%7D%2C%22columnsWidth%22%3A%5B%5D%2C%22fitColumns%22%3Atrue%7D&amp;view-map=%7B%22geomField%22%3Anull%2C%22lonField%22%3Anull%2C%22latField%22%3Anull%2C%22autoZoom%22%3Atrue%7D&amp;state_version=1&amp;width=800&amp;height=500"
           frameborder="0" height="500" width="800"></iframe>
         <!-- Spending Details Table -->
-        <p id="spending">Detalle de los Gastos 2013</p>
+        <h2 id="spending">Detalle de los Gastos 2013</h2>
+        <p>Figura una exploración tipo mapa desglosando los gastos presupuestados por capítulo y concepto. Debajo una tabla con el detalle de todo el presupuesto. Existen <a href="http://openspending.org/ugr-spending">más visualizaciones del presupuesto de gastos</a> en el sitio OpenSpending.</p>
         <iframe src="http://openspending.org/ugr-spending/embed?widget=treemap&amp;state=%7B%22drilldown%22%3A%22to%22%2C%22year%22%3A%222013%22%2C%22cuts%22%3A%7B%7D%2C%22drilldowns%22%3A%5B%22to%22%5D%7D&amp;width=800&amp;height=500"
           frameborder="0" height="350" width="800"></iframe> <iframe src="http://datahub.io/dataset/e8d059e4-6981-4e11-870b-22d830adb6b5/resource/279820d3-459c-4eff-8011-e1fb68cef1f8/embed?query=%7B%22size%22%3A100%2C%22from%22%3A0%2C%22q%22%3A%22%22%2C%22facets%22%3A%7B%7D%2C%22filters%22%3A%5B%5D%7D&amp;view-graph=%7B%22group%22%3Anull%2C%22series%22%3A%5B%5D%2C%22graphType%22%3A%22lines-and-points%22%7D&amp;backend=ckan&amp;url=http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-gastos-2013.csv&amp;dataset=%7B%22resource_group_id%22%3A%221d0c39f9-12f0-46a0-82e2-0557c8d8e191%22%2C%22cache_last_updated%22%3Anull%2C%22revision_timestamp%22%3A%222013-03-03T22%3A10%3A46.565932%22%2C%22webstore_last_updated%22%3A%222013-02-24T16%3A03%3A24.127738%22%2C%22datastore_active%22%3Atrue%2C%22id%22%3A%22279820d3-459c-4eff-8011-e1fb68cef1f8%22%2C%22size%22%3A%2220062%22%2C%22state%22%3A%22active%22%2C%22last_modified%22%3A%222013-02-24T16%3A03%3A21.406092%22%2C%22hash%22%3A%22cd5947a6de8e015950319f7eb5df7de750c46086%22%2C%22description%22%3A%222013%20spending%20budget%20for%20University%20of%20Granada%5Cr%5CnOriginal%20data%20source%3A%20http%3A//opendata.ugr.es%22%2C%22format%22%3A%22csv%22%2C%22tracking_summary%22%3A%7B%22total%22%3A0%2C%22recent%22%3A0%7D%2C%22mimetype_inner%22%3A%22%22%2C%22mimetype%22%3A%22text/plain%22%2C%22cache_url%22%3A%22%22%2C%22name%22%3A%222013-spending-budget-ugr.csv%22%2C%22created%22%3A%222013-02-24T16%3A03%3A18.465437%22%2C%22url%22%3A%22http%3A//raw.github.com/oslugr/presupuestos/master/ugr-estado-gastos-2013.csv%22%2C%22webstore_url%22%3A%22active%22%2C%22position%22%3A0%2C%22revision_id%22%3A%22daa650b5-bb01-455c-a66b-f09f4111672c%22%2C%22resource_type%22%3A%22file%22%2C%22formatNormalized%22%3A%22csv%22%2C%22backend%22%3A%22ckan%22%7D&amp;currentView=null&amp;readOnly=false&amp;view-grid=%7B%22hiddenColumns%22%3A%5B%22_id%22%2C%22fecha%22%2C%22de%22%2C%22cod_capitulo%22%2C%22index%22%2C%22cod_concepto%22%2C%22cod_programa%22%5D%2C%22columnsOrder%22%3A%5B%22capitulo%22%2C%22concepto%22%2C%22programa%22%2C%22cantidad%22%5D%2C%22columnsSort%22%3A%7B%7D%2C%22columnsWidth%22%3A%5B%5D%2C%22fitColumns%22%3Atrue%7D&amp;view-map=%7B%22geomField%22%3Anull%2C%22lonField%22%3Anull%2C%22latField%22%3Anull%2C%22autoZoom%22%3Atrue%7D&amp;state_version=1&amp;width=800&amp;height=500"
           frameborder="0" height="500" width="800"></iframe>
-        
+        <!-- References -->
+        <h3 id="infotech">Información técnica</h3>
+        <ul>
+          <li><a href="https://github.com/openkratio/ugr-presupuestos">Proyecto en UGR-Presupuestos en Github</a> con las transformaciones de datos realizadas y código de las visualizaciones.</li>
+          <li>Diagrama de flujo realizado con <a href="http://bost.ocks.org/mike/sankey">Sankey.js</a>, parte de la librería <a href="http://d3js.org">D3.js</a></li>
+          <li>Diagramas tipo mapa por <a href="http://openspending.org">OpenSpending</a></li>
+          <li>Tablas de detalle gracias al visor empotrable de <a href="http://ckan.org">CKAN</a></li>
+        </ul>
+        <h3 id="references">Referencias empleadas</h3>
+        <ul>
+          <li>Fuente de datos: <a href="http://gerencia.ugr.es/pages/vger_eco">Presupuestos publicados por Universidad de Granada</a>.</li>
+          <li>Inspirado por <a href="http://aurrekontuak.irekia.euskadi.net">Presupuestos País Vasco</a>, un proyecto de <a href="http://www.civio.es">Fundación Civio</a>.</li>
+          <li>Realizado durante el <a href="http://opendataday.org">Open Data Day 2013</a>, celebrado por la <a href="http://osl.ugr.es/2013/02/11/open-data-day-hackathon">OSL-UGR</a> en la Universidad de Granada.</li>
+        </ul>
         <!-- DIQUS Board -->
+        <p style="font-size: 24px;">Déjanos un comentario</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -108,10 +139,9 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+        </script> <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span
+            class="logo-disqus">Disqus</span></a>
         <script>
 
             var margin = {top: 1, right: 1, bottom: 6, left: 1},
@@ -200,7 +230,7 @@
     var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
     </script>
     <!-- DISQUS comment count -->
-        <script type="text/javascript">
+    <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'ugr-presupuestos'; // required: replace example with your forum shortname
 
